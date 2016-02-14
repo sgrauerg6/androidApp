@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.mathprog.sgrauerg.mathprog.IntroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fullscreen_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:keepScreenOn="true"
+            android:text="MATH\nPROGRAM"
+            android:textColor="#555555"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:text="Play" />
+
+        <Button
+            android:id="@+id/insttructionsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instructions" />
+
+ <!--       <Button
+            android:id="@+id/statsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Stats" /> -->
+
+        <Button
+            android:id="@+id/highScoreButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Scores" />
+    </LinearLayout>
+
+
+</FrameLayout>
