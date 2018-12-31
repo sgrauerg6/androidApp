@@ -1,4 +1,4 @@
-package com.mathprog.sgrauerg.mathprog;
+package com.mathprog.sgrauerg.monochromemath;
 
 import java.io.Serializable;
 import java.util.LinkedList;

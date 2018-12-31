@@ -1,4 +1,4 @@
-package com.mathprog.sgrauerg.mathprog;
+package com.mathprog.sgrauerg.monochromemath;
 
 import android.content.Context;
 import android.util.Log;
@@ -20,6 +20,8 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 /**
  * Created by scott on 11/13/2015.
@@ -121,9 +123,10 @@ public class HighScores implements Serializable {
     {
         StringBuilder scoresAndNamesString = new StringBuilder();
         int numScoresToRetrieve = Math.min(highScoreList.size(), numHighScores);
+        NumberFormat formatter = new DecimalFormat("#0.00");
         for (int i=0; i < numScoresToRetrieve; i++)
         {
-            scoresAndNamesString.append(highScoreList.get(i).gameScore);
+            scoresAndNamesString.append(formatter.format(highScoreList.get(i).gameScore));
 
             if (i != (numHighScores - 1))
             {

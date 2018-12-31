@@ -1,4 +1,4 @@
-package com.mathprog.sgrauerg.mathprog;
+package com.mathprog.sgrauerg.monochromemath;
 
 import android.util.Log;
 import android.widget.TextView;

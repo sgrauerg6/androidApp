@@ -1,17 +1,17 @@
-package com.mathprog.sgrauerg.mathprog;
+package com.mathprog.sgrauerg.monochromemath;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Set;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by sgrauerg on 11/6/15.
  */
 public class GameOptions implements Serializable {
 
-    public static final int GAME_TIME = 10;
+    public static final int GAME_TIME = 15;
     public enum probType { PLUS, MINUS, MULT, DIVIDE};
 
     public class probSettings

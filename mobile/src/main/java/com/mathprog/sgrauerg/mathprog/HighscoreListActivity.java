@@ -1,16 +1,15 @@
-package com.mathprog.sgrauerg.mathprog;
+package com.mathprog.sgrauerg.monochromemath;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.mathprog.sgrauerg.monochromemath.R;
 
 
 public class HighscoreListActivity extends AppCompatActivity {
@@ -21,6 +20,11 @@ public class HighscoreListActivity extends AppCompatActivity {
     {
         super.onCreate(b);
         setContentView(R.layout.activity_highscore_list);
+
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         localHighScoreList = HighScores.loadHighScoresFromFile(getBaseContext().getFilesDir().toString() + "HIGHSCORZ");
         if (localHighScoreList == null)
         {

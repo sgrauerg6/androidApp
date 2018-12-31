@@ -1,23 +1,21 @@
-package com.mathprog.sgrauerg.mathprog;
+package com.mathprog.sgrauerg.monochromemath;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.LightingColorFilter;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.os.Handler;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.mathprog.sgrauerg.monochromemath.R;
 
 import java.util.Calendar;
 import java.util.List;
@@ -110,6 +108,7 @@ public class GameplayActivity extends AppCompatActivity {
     public void startGame()
     {
         gameOver = false;
+        switchToLightTheme();
 
         currGameState.startGame();
         gameTimer.startTimer();

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MathProg</string>
+    <string name="app_name">Monochrome Math</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -9,8 +9,14 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <string name="title_activity_gameplay">GameplayActivity</string>
+    <string name="title_active_game_ending">GameEndingActivity</string>
+    <string name="title_activity_overall_stats">OverallStatsActivity</string>
+    <string name="title_activity_instructions_activity">InstructionsActivity</string>
 
     <string name="title_activity_endgame">EndgameActivity</string>
 
     <string name="title_activity_highscore_list">HighscoreListActivity</string>
+    <string name="banner_ad_unit_id">ca-app-pub-9736755972412076/5749141946</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-9736755972412076/9847937546</string>
+
 </resources>

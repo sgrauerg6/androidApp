@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
     tools:context="com.mathprog.sgrauerg.mathprog.InstructionsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
         android:orientation="vertical">
 
         <TextView
@@ -20,6 +22,7 @@
             android:layout_height="wrap_content"
             android:textSize="40sp"
             android:textStyle="bold"
+            android:textColor="#000000"
             android:paddingBottom="6dp"
             android:text="INSTRUCTIONS"
             />
@@ -29,7 +32,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="32dp"
-            android:text="Press on button corresponding to correct answer as quickly as possible"/>
+            android:textColor="#000000"
+            android:text="Press button corresponding to correct answer as quickly as possible.\n\nGameplay is 15 seconds.\nTime remaining shown in upper right of screen.\n\n\n\nScoring:\n\nCorrect answer: +10 points\nBonus of (answer time-2.5 seconds)*2 points if answered less than 2.5 seconds\n\nWrong answer: -10 points"
+            />
 
         <Button
             android:id="@+id/instructionsGoBackButton"
@@ -38,5 +43,16 @@
             android:text="Back to main menu"/>
 
     </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>
